@@ -1,26 +1,23 @@
 .PHONY: all clean re
 
-ALL=libftprintf.a libft.h ft_printf.h
+ALL=libft.a libft.h
 
 NAME=test
 
 all: $(NAME)
 
 $(NAME): $(ALL) test.c
-	cc test.c libftprintf.a -o test
+	cc test.c libft.a -o test
 
 #%:
 #	cp ../ft_printf/$@ ./
 
-libftprintf.a:
-	make -C ../ft_printf re
-	cp ../ft_printf/libftprintf.a ./
+libft.a:
+	make -C ../libft re
+	cp ../libft/libft.a ./
 
 libft.h:
-	cp ../ft_printf/libft.h ./
-
-ft_printf.h:
-	cp ../ft_printf/ft_printf.h ./
+	cp ../libft/libft.h ./
 
 clean:
 	rm -f $(ALL) $(NAME)

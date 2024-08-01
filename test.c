@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+#include "libft.h"
 #include <stdio.h>
 #include <limits.h>
 int main()

@@ -111,6 +111,7 @@ int main()
 		
 		int a = ft_printf("yours:%i\n", 0);
 		int b = printf("their:%i\n", 0);
+		printf("\n");
 		if (a != b)
 		{
 			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
@@ -118,9 +119,9 @@ int main()
 		c++;
 	}
 	{
-		int a = ft_printf(" %u %u ", ULONG_MAX, -ULONG_MAX);	
+		int a = ft_printf("yours:%u %u\n", ULONG_MAX, -ULONG_MAX);	
+		int b = printf("their:%u %u\n", ULONG_MAX, -ULONG_MAX);	
 		printf("\n");
-		int b = printf(" %u %u ", ULONG_MAX, -ULONG_MAX);	
 		if (a != b)
 		{
 			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
@@ -128,22 +129,93 @@ int main()
 		}
 	}
 	{
-		int a = ft_printf(" %i \n", 0xF);	
+		int a = ft_printf("yours:%i \n", 0xF);	
+		int b = printf("their:%i \n", 0xF);	
 		printf("\n");
-		int b = printf(" %i \n", 0xF);	
 		if (a != b)
 		{
 			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
 
 		}
 	}
-	int b = printf("some percent shenanigans\n");	
+	printf("pointers\n");
 	{
-		int a = ft_printf(" %d asdasdasdasd %p", 1223123, 'g');
+		int a = ft_printf("yours:%p \n", 0xF);	
+		int b = printf("their:%p \n", 0xF);	
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0);	
+		int b = printf("their:%p \n", 0);	
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0xFFFFFFFFFF);
+		int b = printf("their:%p \n", 0xFFFFFFFFFF);
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0xFFFFFFFFFFFF);
+		int b = printf("their:%p \n", 0xFFFFFFFFFFFF);
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0xFFFFFFFF);
+		int b = printf("their:%p \n", 0xFFFFFFFF);
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0xFFFFFFFFFFFFFFF);
+		int b = printf("their:%p \n", 0xFFFFFFFFFFFFFFF);
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	{
+		int a = ft_printf("yours:%p \n", 0xFFFFFFFFFFFFFFFF);
+		int b = printf("their:%p \n", 0xFFFFFFFFFFFFFFFF);
+		printf("\n");
+		if (a != b)
+		{
+			printf("count problem\nyours: %d\nsystem: %d\n", a, b);
+
+		}
+	}
+	printf("some percent shenanigans\n");	
+	{
+		int a = ft_printf(" %d asdasdasdasd %", 1223123);
 		printf("\n");
 //		int a = 0;
 //		printf("\n");
-		int b = printf(" %d asdasdasdasd %", 1223123, 'g');	
+		int b = printf(" %d asdasdasdasd %", 1223123);	
 //		int b = 0;
 		if (a != b)
 		{

@@ -6,7 +6,7 @@
 /*   By: mbutuzov <mbutuzov@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 18:08:57 by mbutuzov          #+#    #+#             */
-/*   Updated: 2024/05/31 19:13:30 by mbutuzov         ###   ########.fr       */
+/*   Updated: 2024/08/01 19:47:17 by mbutuzov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,4 @@ int	ft_putnumber_base(long long number, char *radix);
 int	ft_printf(const char *format, ...);
 int	ft_ptr_handler(unsigned long num);
 int	ft_putstr(char *s);
-int	ft_unsigned_handler(unsigned int num);
 #endif

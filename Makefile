@@ -13,6 +13,7 @@ $(NAME): $(ALL) test.c
 #	cp ../ft_printf/$@ ./
 
 libftprintf.a:
+	make -C ../ft_printf re
 	cp ../ft_printf/libftprintf.a ./
 
 libft.h:
